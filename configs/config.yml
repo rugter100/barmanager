@@ -1,0 +1,51 @@
+debug: True
+group_name: 'Luwt Stam'
+admin_password: '123'
+
+database:
+  local:
+    db_id: 'local'
+    initialize: True
+
+user_preferences:
+  fullscreen_borderless: False
+  use_credits: True
+  credit_value_in_cents: 50
+
+  # when not using credits entry is used for money
+  # Money should always be in cents. I.E. $1.50 = 150
+  credits_added_via_button: 20
+  show_totals: True
+  order_columns: 6
+  default_ui_scale: 100 # Int in percentage scaling so 100% = 100
+
+
+# Language translation
+lang:
+  none: 'Geen'
+  history_label: "Bestellingen"
+  history_sublabel: "Besteld"
+  stats_label: "Samenvatting"
+  stats_sublabel: "Je drankgebruik"
+  order_date: 'Besteldatum'
+  item: 'Product'
+  user: 'Lid'
+  add_credits: '+ 20 Tickets'
+  credits: 'Tickets'
+  select_user: 'Selecteer Lid:'
+  sort_user: 'Alleen eigen orders'
+  sort_item: 'Sorteer op item'
+  out_of_stock: 'We hebben geen %s meer' # %s gets replaced with item name
+  out_of_credits: 'Je hebt geen bartickets meer, miss een barkaart halen ;p'
+  current_credits_money: 'Tickets: %s' # %s Gets replaced with tickets or money anmount
+  recent_order: 'Laatste drankje: %s' # %s Gets replaced with order
+  order_here: 'Selecteer je vloeistof'
+
+  left_header: 'Krediet:'
+  credits_money_left: 'Tickets: %s' # %s becomes credits or money left
+
+  spent_header: 'Uitgegeven:'
+  total_orders: 'totale hoeveelheid drank: %s' # %s becomes total orders
+  total_credits_spent: 'Totaal: %s Bartickets' # %s becomes credit total
+  total_credit_cards_avalible: 'Totaal %s Barkaarten Beschikbaar'
+  total_money_spent: 'Totaal: %s Euro' # %s becomes float of money spent
