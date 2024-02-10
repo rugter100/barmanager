@@ -9,12 +9,14 @@ database:
 
 user_preferences:
   fullscreen_borderless: False
-  use_credits: True
+  use_credits: False
   credit_value_in_cents: 50
+  logging: True
+  info_cmdout: True
 
   # when not using credits entry is used for money
   # Money should always be in cents. I.E. $1.50 = 150
-  credits_added_via_button: 20
+  credits_added_via_button: 1000
   show_totals: True
   order_columns: 6
   default_ui_scale: 100 # Int in percentage scaling so 100% = 100
@@ -29,20 +31,20 @@ lang:
   stats_sublabel: "Je drankgebruik"
   order_date: 'Besteldatum'
   item: 'Product'
-  user: 'Lid'
-  add_credits: '+ 20 Tickets'
-  credits: 'Tickets'
+  user: ''
+  add_credits: '+ 10 Euro'
+  credits: 'Euro'
   select_user: 'Selecteer Lid:'
   sort_user: 'Alleen eigen orders'
   sort_item: 'Sorteer op item'
   out_of_stock: 'We hebben geen %s meer' # %s gets replaced with item name
   out_of_credits: 'Je hebt geen bartickets meer, miss een barkaart halen ;p'
-  current_credits_money: 'Tickets: %s' # %s Gets replaced with tickets or money anmount
+  current_credits_money: '%s Euro over' # %s Gets replaced with tickets or money anmount
   recent_order: 'Laatste drankje: %s' # %s Gets replaced with order
   order_here: 'Selecteer je vloeistof'
 
   left_header: 'Krediet:'
-  credits_money_left: 'Tickets: %s' # %s becomes credits or money left
+  credits_money_left: '%s Euro over' # %s becomes credits or money left
 
   spent_header: 'Uitgegeven:'
   total_orders: 'totale hoeveelheid drank: %s' # %s becomes total orders
